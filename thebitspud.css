@@ -1,23 +1,51 @@
-body {
-    background-color: lightgrey;
-    max-width: 100vw;
+p {
+	font-size: 120%;
 }
 
-nav {
-	max-width: 100vw;
-	box-shadow: 0 0 10px gray;
+a.footer-link {
+	color: lightgray;
+	text-decoration: none;
 }
 
-.site-panel {
-	margin-top: 10px;
-	padding: 5px;
-	box-shadow: 0 0 10px gray;
+a.footer-link:hover {
+	color: white;
+	text-decoration: none;
 }
 
-.site-util {
-    margin-top: 15px;
+a.blue-link {
+	text-decoration: none;
 }
 
-.top-margin {
-    margin-top: 100px;
+a.blue-link:hover {
+	color: blue;
+	text-decoration: none;
+}
+
+.carousel {
+	border: 2px solid #111111;
+}
+
+.carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.bb-dark {
+	border-bottom: 2px solid #111111;
+}
+
+.tb-dark {
+	border-top: 3px solid #111111;
+}
+
+#page-title {
+	animation: fade-in 3s;
+}
+
+@keyframes fade-in {
+	from { opacity: 0 }
+	to { opacity: 1 }
 }

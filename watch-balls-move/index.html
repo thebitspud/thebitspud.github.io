@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name = "author" content = "Thebitspud">
+        <meta name = "description" content = "A project I made to test out jQuery canvas objects.">
+
+        <link href = "style.css" rel = "stylesheet" type = "text/css" />
+        
+        <title>Watch Balls Move</title>
+    </head>
+
+    <body>
+        <h1 id = "title-text">.</h1>
+
+        <div class = "side-div">
+            <button id = "gravity-toggle" class = "def-btn" onclick = "toggleGravity()">Gravity: OFF</button><br>
+            <button id = "autospawn-toggle" class = "def-btn" onclick = "toggleAutospawn()">Autospawn: ON</button><br>
+            <button id = "autoclear-toggle" class = "def-btn" onclick = "toggleAutoclear()">Autoclear: ON</button><br>
+            <br>
+            <button id = "spawn-ring" class = "def-btn" onclick = "spawnRing()">Spawn Ring</button><br>
+            <button id = "center-balls" class = "def-btn" onclick = "centerBalls()">Reset Balls (Center)</button><br>
+            <button id = "random-balls" class = "def-btn" onclick = "randomBalls()">Reset Balls (Random)</button><br>
+            <br>
+            <button id = "add-ball" class = "def-btn" onclick = "createBall()">Add Ball</button><br>
+            <button id = "remove-ball" class = "def-btn" onclick = "if(balls.length > 0) { removedBalls++; balls.shift() }">Remove Ball</button><br>
+            <button id = "clear-balls" class = "def-btn" onclick = "removedBalls += balls.length; balls.length = 0">Clear Balls</button><br>
+        </div>
+
+        <div id = "main-display">
+            <div id = "canvas-container">
+                <canvas id = "main-screen" width = "500" height = "500">.</canvas>
+            </div>
+        </div>
+            
+        <div class = "side-div">
+            Total Balls Spawned: <span id = "total-spawns"></span><br>
+            <br>
+            Upper Object Limit: <span id = "max-balls"></span><br>
+            Current Ball Count: <span id = "current-balls"></span><br>
+            Active Balls: <span id = "active-balls"></span><br>
+            Inert Balls: <span id = "inert-balls"></span><br>
+            <br>
+            Total Balls Removed: <span id = "removed-balls"></span><br>
+            <br>
+            <a href = "https://thebitspud.github.io/" id = "thebitspud">Created by TheBitSpud</a>
+        </div>
+
+        <script src = "https://code.jquery.com/jquery-3.3.1.min.js" integrity = "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin = "anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jcanvas/21.0.1/jcanvas.js"></script>
+
+        <script src = "script.js" type = "text/javascript"></script>
+    </body>
+</html>
