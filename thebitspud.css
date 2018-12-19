@@ -2,6 +2,18 @@ p {
 	font-size: 120%;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+	font-weight: lighter;
+	text-align: center;
+	margin: auto;
+}
+
+a.btn {
+	width: 50%;
+	margin: auto;
+	border-radius: 0px;
+}
+
 a.footer-link {
 	color: lightgray;
 	text-decoration: none;
@@ -42,7 +54,7 @@ a.blue-link:hover {
 }
 
 #page-title {
-	animation: fade-in 3s;
+	animation: fade-in 4s;
 }
 
 @keyframes fade-in {
