@@ -8,6 +8,11 @@ p, h1, h2, h3, h4, h5, h6 {
 	margin: auto;
 }
 
+.img {
+	width: auto;
+	height: auto;
+}
+
 a.btn {
 	width: 50%;
 	margin: auto;
@@ -15,12 +20,12 @@ a.btn {
 }
 
 a.footer-link {
-	color: lightgray;
+	color: gray;
 	text-decoration: none;
 }
 
 a.footer-link:hover {
-	color: white;
+	color: lightgray;
 	text-decoration: none;
 }
 
