@@ -1,3 +1,5 @@
+/* Setting site defaults */
+
 p {
 	font-size: 120%;
 }
@@ -17,6 +19,8 @@ p.blog {
 	text-indent: 4em;
 }
 
+/* Blog previews */
+
 p.preview {
 	position: relative;
 }
@@ -32,6 +36,8 @@ p.preview:after {
 	pointer-events: none;
 	background: linear-gradient(to bottom, transparent, white);
 }
+
+/* Links and buttons */
 
 a.btn {
 	width: 50%;
@@ -59,6 +65,8 @@ a.blue-link:hover {
 	text-decoration: none;
 }
 
+/* Bootstrap modifications */
+
 .card:hover {
 	transform: scale(1.04);
 	transition-duration: 0.25s;
@@ -76,6 +84,8 @@ a.blue-link:hover {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
+/* Custom borders */
+
 .bb-dark {
 	border-bottom: 2px solid #111111;
 }
@@ -83,6 +93,8 @@ a.blue-link:hover {
 .tb-dark {
 	border-top: 3px solid #111111;
 }
+
+/* Animations */
 
 #page-title {
 	animation: fade-in 4s;
