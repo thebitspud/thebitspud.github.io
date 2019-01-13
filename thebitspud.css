@@ -2,7 +2,7 @@ p {
 	font-size: 120%;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, div, h1, h2, h3, h4, h5, h6 {
 	font-weight: lighter;
 	text-align: center;
 	margin: auto;
@@ -11,6 +11,26 @@ p, h1, h2, h3, h4, h5, h6 {
 .img {
 	width: auto;
 	height: auto;
+}
+
+p.blog {
+	text-indent: 4em;
+}
+
+p.preview {
+	position: relative;
+}
+
+p.preview:after {
+	margin: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	content: "";
+	pointer-events: none;
+	background: linear-gradient(to bottom, transparent, white);
 }
 
 a.btn {
@@ -37,6 +57,11 @@ a.blue-link {
 a.blue-link:hover {
 	color: blue;
 	text-decoration: none;
+}
+
+.card:hover {
+	transform: scale(1.04);
+	transition-duration: 0.25s;
 }
 
 .carousel {
