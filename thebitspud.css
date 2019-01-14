@@ -76,7 +76,9 @@ a.blue-link:hover {
 /* Bootstrap modifications */
 
 .card:hover {
-	transform: scale(1.04);
+	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
 	transition-duration: 0.25s;
 }
 
