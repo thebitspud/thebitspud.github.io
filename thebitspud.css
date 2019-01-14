@@ -1,4 +1,4 @@
-/* Setting site defaults */
+/* Site defaults */
 
 p {
 	font-size: 120%;
@@ -65,6 +65,16 @@ a.blue-link:hover {
 	text-decoration: none;
 }
 
+/* Custom borders */
+
+.bb-dark {
+	border-bottom: 2px solid #111111;
+}
+
+.tb-dark {
+	border-top: 2px solid #111111;
+}
+
 /* Bootstrap modifications */
 
 .card:hover {
@@ -82,16 +92,6 @@ a.blue-link:hover {
 
 .next-black {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-}
-
-/* Custom borders */
-
-.bb-dark {
-	border-bottom: 2px solid #111111;
-}
-
-.tb-dark {
-	border-top: 2px solid #111111;
 }
 
 /* Animations */
