@@ -19,6 +19,14 @@ p.blog {
 	text-indent: 4em;
 }
 
+.navbar {
+	border-bottom: 2px solid #111111;
+}
+
+.footer {
+	border-top: 2px solid #111111;
+}
+
 /* Blog previews */
 
 p.preview {
@@ -63,16 +71,6 @@ a.blue-link {
 a.blue-link:hover {
 	color: blue;
 	text-decoration: none;
-}
-
-/* Custom borders */
-
-.bb-dark {
-	border-bottom: 2px solid #111111;
-}
-
-.tb-dark {
-	border-top: 2px solid #111111;
 }
 
 /* Bootstrap modifications */
